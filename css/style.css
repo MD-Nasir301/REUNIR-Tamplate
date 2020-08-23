@@ -1,0 +1,246 @@
+/*
+  Theme Name: Name - Multipurpose HTML Template
+  Author: nasir21b@gmail.com
+  Support: admin@gmail.com / nasir21b@gmail.com
+  Description: Creative  HTML5 template.
+  Version: 1.0
+*/
+
+/* CSS Index
+-----------------------------------
+1. Theme default css
+2. header-top
+3. slider
+4. about-area
+5. features-box
+6. department
+7. team
+8. video-area
+9. counter
+10. footer
+*/
+
+
+/* 1. Theme default css */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: normal;
+	color: #313131;
+	margin-top: 0px;
+	font-style: normal;
+	font-weight: 400;
+	text-transform: normal;
+}
+p {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 28px;
+	color: #3f3c57;
+	margin-bottom: 15px;
+}
+a,
+button {
+	color: #1696e7;
+	outline: medium none;
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+li {
+	list-style: none
+}
+a:focus,
+.button:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+/* button style ----------------- */
+.btn {
+	-moz-user-select: none;
+	background: #1696e7 none repeat scroll 0 0;
+	border: medium none;
+	border-radius: 2px;
+	color: #fefefe;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	line-height: 24px;
+	margin-bottom: 0;
+	padding: 13px 25px;
+	text-align: center;
+	text-transform: uppercase;
+	touch-action: manipulation;
+	transition: all 0.3s ease 0s;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+button:focus,input:focus,input:focus,textarea,textarea:focus{outline: 0}
+a,
+.button {
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+}
+
+ /* Theme-overlay Style --------------------- */
+ .theme-overlay {
+	position: relative
+}
+.theme-overlay::before {
+	background: #2b108e none repeat scroll 0 0;
+	content: "";
+	height: 100%;
+	left: 0;
+	opacity: 0.5;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+/* scrollUp Style ------------------------------- */
+/* #scrollUp {
+	background: #7DBA2F;
+	height: 35px;
+	width: 35px;
+	right: 50px;
+	bottom: 77px;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	border-radius: 50%;
+	font-size: 20px;
+	line-height: 34px;
+} 
+ #scrollUp:hover {
+	background: #444;
+} */
+
+/* Selection Style ---------------------------- */
+*::-moz-selection {
+	background: #d6b161;
+	color: #fff;
+	text-shadow: none;
+}
+::-moz-selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+::selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+*::-moz-placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+*::placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+
+/* .owl-carousel Style ------------------------ */
+/* .owl-carousel .owl-nav div {
+	background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+	height: 40px;
+	left: 20px;
+	line-height: 40px;
+	opacity: 0;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: all 0.3s ease 0s;
+	visibility: hidden;
+	width: 40px;
+}
+.owl-carousel .owl-nav div.owl-next {
+	left: auto;
+	right: 20px;
+}
+.owl-carousel:hover .owl-nav div {
+	opacity: 1;
+	visibility: visible;
+}
+.owl-carousel .owl-nav div:hover {
+	background: #2B96CC;
+	color: #fff
+} */
+
+/* hr Style ---------------------------- */
+/* hr {
+	border-bottom: 1px solid #eceff8;
+	border-top: 0 none;
+	margin: 30px 0;
+	padding: 0;
+} */
+/* separator Style --------------------- */
+/* .separator {
+	border-top: 1px solid #f2f2f2
+} */
+
+/* ------------ */
+
+/* header-top */
+header {
+	background: url('../img/header-bg.jpg') top center;
+	background-size: auto 108%;
+	min-height: 900px;
+}
+.header-top {
+	padding: 16px 0;
+	color: #E4E2E2;
+	border-bottom: 1px solid #635895;
+	position: relative;
+	z-index: 2222;
+}
+.header-top-left span {
+    margin-right: 10px;
+}
+.select-lang select {
+	color: #E4E2E2;
+	border: none;
+	outline: none;
+	background: none;
+	-webkit-appear ance: none;
+}
+.select-lang select option {
+	color: black;
+}
+.my-cart i {
+	padding: 8px;
+	border: 2px solid #8E84AE;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+/* nav */
+
+
+
+
+
+
+
+
+
+
+
