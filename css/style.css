@@ -9,9 +9,9 @@
 /* CSS Index
 -----------------------------------
 1. Theme default css
-2. header-top
-3. slider
-4. about-area
+2. header
+3. nav
+4. banner
 5. features-box
 6. department
 7. team
@@ -22,7 +22,7 @@
 
 
 /* 1. Theme default css */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
  body {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: normal;
@@ -57,6 +57,11 @@ ul {
 li {
 	list-style: none
 }
+a:hover,
+.button:focus {
+	text-decoration: none;
+	outline: none;
+}
 a:focus,
 .button:focus {
 	text-decoration: none;
@@ -65,25 +70,36 @@ a:focus,
 
 /* button style ----------------- */
 .btn {
-	-moz-user-select: none;
-	background: #1696e7 none repeat scroll 0 0;
-	border: medium none;
-	border-radius: 2px;
-	color: #fefefe;
-	cursor: pointer;
-	display: inline-block;
-	font-size: 16px;
-	font-weight: 600;
-	letter-spacing: 1px;
-	line-height: 24px;
-	margin-bottom: 0;
-	padding: 13px 25px;
-	text-align: center;
-	text-transform: uppercase;
-	touch-action: manipulation;
-	transition: all 0.3s ease 0s;
-	vertical-align: middle;
-	white-space: nowrap;
+    background: linear-gradient(100deg, #7c006f 20%,#dd001b 81%);
+    border: 2px solid #D55131;
+    border-radius: 25px;
+    color: #fefefe;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 24px;
+    margin-bottom: 0;
+    padding: 14px 50px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transition: all 0.3s ease 0s;
+    vertical-align: middle;
+    white-space: nowrap;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+.btn2 {
+	padding-left: 36px;
+	padding-right: 36px;
+}
+.btn3 {
+    border: none;
+    padding: 13px 25px;
 }
 button:focus,input:focus,input:focus,textarea,textarea:focus{outline: 0}
 a,
@@ -94,7 +110,7 @@ a,
 	-o-transition: all 0.3s ease-out 0s;
 	transition: all 0.3s ease-out 0s;
 }
-
+ 
  /* Theme-overlay Style --------------------- */
  .theme-overlay {
 	position: relative
@@ -154,6 +170,14 @@ a,
 	font-size: 14px;
 	opacity: 1;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+input[type=number] {
+	-moz-appearance: textfield;
+}
 
 /* .owl-carousel Style ------------------------ */
 /* .owl-carousel .owl-nav div {
@@ -200,31 +224,33 @@ a,
 /* header-top */
 header {
 	background: url('../img/header-bg.jpg') top center;
-	background-size: auto 108%;
+	background-size: auto 99%;
 	min-height: 900px;
+}
+.header-area {
+	position: relative;
+	z-index: 1;
 }
 .header-top {
 	padding: 16px 0;
 	color: #E4E2E2;
 	border-bottom: 1px solid #635895;
-	position: relative;
-	z-index: 2222;
 }
 .header-top-left span {
     margin-right: 10px;
 }
-.select-lang select {
+.select-lang-box select {
 	color: #E4E2E2;
 	border: none;
 	outline: none;
 	background: none;
-	-webkit-appear ance: none;
 }
-.select-lang select option {
+.select-lang-box select option {
 	color: black;
 }
 .my-cart i {
 	padding: 8px;
+	margin: 0 2px;
 	border: 2px solid #8E84AE;
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
@@ -232,12 +258,100 @@ header {
 	-ms-border-radius: 50%;
 	-o-border-radius: 50%;
 }
+
 /* nav */
+nav {
+	padding: 13px 0;
+}
+.brand-logo {
+	margin-top: 2px;
+}
+.brand-logo a img {
+    width: 50px;
+    margin-right: 5px;
+}
+.brand-name {
+	font-family: 'Raleway', sans-serif;
+}
+.main-menu {
+	padding-top: 15px;
+}
+.main-menu ul li {
+    float: left;
+    margin-left: 42px;
+}
+.main-menu ul li a {
+    color: #fff;
+    font-weight: 700;
+}
+.main-menu ul li a:hover {
+	color: #D55131 ;
+}
+
+/* banner*/
+.banner-content h2 {
+    font-size: 90px;
+    font-weight: 300;
+	margin-top: 85px;
+	margin-bottom: 45px;
+}
+
+/* our-users */
+.single-users-box {
+	position: relative;
+}
+.single-users-box::after {
+	position: absolute;
+	content: "";
+	width: 1px;
+	height: 80px;
+	right: 0;
+	top: 20px;
+	background: white;
+}
+.users-box-icon i {
+    font-size: 40px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #f50;
+}
+
+/* investment-area */
+.investment-area {
+	padding: 30px 0;
+}
+
+.investment-input-field {
+	border: 1px solid #8389B7;
+	background: #272E71;
+    padding: 5px 6px 5px 25px;
+    border-radius: 50px;
+    width: fit-content;
+}
+.investment-input-field input {
+    font-size: 18px;
+    color: white;
+    background: none;
+	border: none;
+    width: 195px;
+    margin-right: 10px;
+}
+.investment-input-field input::placeholder {
+	color:#8389B7;
+	font-size: 18px;
+}
+.investment-input-field select > option {
+	color: #000;
+}
+.investment-icon i {
+    font-size: 60px;
+    margin-top: 35px;
+    display: inline-block;
+}
 
 
 
-
-
+  
 
 
 
