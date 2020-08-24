@@ -69,25 +69,29 @@
 
 
 // owlCarousel------------------------
-// $('.owl-carousel').owlCarousel({
-//     loop:true,
-//     margin:0,
-// 	items:1,
-// 	navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
-//     nav:true,
-// 	dots:false,
-//     responsive:{
-//         0:{
-//             items:1
-//         },
-//         767:{
-//             items:3
-//         },
-//         992:{
-//             items:5
-//         }
-//     }
-// })
+$(".owl-carousel").owlCarousel({
+    margin:30,
+    autoplay:true,
+    autoplayTimeout:2000,
+    nav:true,
+    dots:true,
+    navText:['<i class="icofont-thin-left"></i>','<i class="icofont-thin-right"></i>'],
+    responsive:{
+        0:{
+            items:1,
+        },
+        600:{
+            items:3,
+        },
+        1000:{
+            items:5,
+        }
+
+    }
+   
+});
+
+
 
 
 // magnificPopup img view -----------------

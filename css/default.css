@@ -367,7 +367,7 @@
 }
 
 /*-- Padding Bottom -------------------*/
-.pb-5 {
+.pb-5px {
 	padding-bottom: 5px;
 }
 .pb-10 {
@@ -653,6 +653,11 @@
 }
 .text-grd {
     background: linear-gradient(100deg, #940586 20%,#dd001b 81%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.text-grd2 {
+	background: linear-gradient(100deg, #890065fa 35%,#d50024eb 51%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
