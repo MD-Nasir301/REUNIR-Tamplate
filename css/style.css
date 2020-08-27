@@ -127,7 +127,7 @@ a:focus,
 	padding: 7px 20px;
 	font-size: 14px;
 	margin: 20px 0 40px;
-	box-shadow: 1px 5px 10px 0px #0000008c;
+    box-shadow: 0px 7px 20px 0px #0725fd9c;
 }
 button:focus,input:focus,input:focus,textarea,textarea:focus{outline: 0}
 a,
@@ -721,9 +721,12 @@ nav {
     display: flex;
     justify-content: space-between;
     background: #FF5500;
-	padding: 5px 19px;
+    padding: 5px 21px 9px;
 	color: #fff;
     border-radius: 50px;
+}
+.trans-btn-icon  {
+	font-size: 45px;
 }
 .trans-btn-name {
 	margin-left: 15px;
@@ -741,7 +744,7 @@ nav {
 }
 .trans-table {
 	background: #fff;
-	box-shadow: 2px 2px 3px 2px gray;
+    box-shadow: 0px 4px 16px 0px #8080807a;
 }
 .trans-table thead {
 	background: #EEF4FB;
@@ -771,6 +774,12 @@ nav {
 .ren-bitcoins:before {
     content: "D";
 }
+.ren-investo:before {
+    content: "e";
+}
+.ren-people3:before {
+    content: "l";
+} 
 .trans-table-name-col img {
     width: 60px;
     border: 2px solid #f50;
@@ -784,7 +793,9 @@ nav {
 .trans-tbale thead th.th-name {
 	width: 100px;
 }
-
+.browse-more {
+	padding: 10px 30px;
+}
 
 
 
