@@ -19,10 +19,22 @@
 9. counter
 10. footer
 */
-
-
 /* 1. Theme default css */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+    font-family: Reunir;
+	src: url('../fonts/Reunir.woff');
+  }
+[class*=ren-]:before {
+    display: inline-block;
+    font-family: Reunir;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
  body {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: normal;
@@ -70,28 +82,37 @@ a:focus,
 
 /* button style ----------------- */
 .btn {
-    background: linear-gradient(100deg, #7c006f 20%,#dd001b 81%);
-    border: 2px solid #D55131;
-    border-radius: 25px;
-    color: #fefefe;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0px;
-    line-height: 24px;
-    margin-bottom: 0;
-    padding: 14px 50px;
-    text-align: center;
-    text-transform: uppercase;
-    touch-action: manipulation;
-    transition: all 0.3s ease 0s;
-    vertical-align: middle;
-    white-space: nowrap;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
+	background: linear-gradient(100deg, #7c006f 20%,#dd001b 81%);
+	border: 2px solid #D55131;
+	border-radius: 25px;
+	color: #fefefe;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 0px;
+	line-height: 24px;
+	margin-bottom: 0;
+	padding: 14px 50px;
+	text-align: center;
+	text-transform: uppercase;
+	touch-action: manipulation;
+	transition: all 0.6s ease 0s;
+	vertical-align: middle;
+	white-space: nowrap;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+	-webkit-transition: all 0.6s ease 0s;
+	-moz-transition: all 0.6s ease 0s;
+	-ms-transition: all 0.6s ease 0s;
+	-o-transition: all 0.6s ease 0s;
+}
+.btn:not(.btn3):hover {
+	color: #fff;
+	background: #f50;
+	border: 2px solid #f50;
 }
 .btn2 {
 	padding-left: 36px;
@@ -100,6 +121,13 @@ a:focus,
 .btn3 {
     border: none;
     padding: 13px 25px;
+}
+.btn4 {
+	background-image: linear-gradient(90deg,#3b26db 1%,#7b19cb);
+	padding: 7px 20px;
+	font-size: 14px;
+	margin: 20px 0 40px;
+	box-shadow: 1px 5px 10px 0px #0000008c;
 }
 button:focus,input:focus,input:focus,textarea,textarea:focus{outline: 0}
 a,
@@ -120,10 +148,13 @@ a,
 	content: "";
 	height: 100%;
 	left: 0;
-	opacity: 0.5;
+	opacity: 0.8;
 	position: absolute;
 	top: 0;
 	width: 100%;
+}
+.theme-overlay2::before {
+		opacity: 0.5;
 }
 
 /* scrollUp Style ------------------------------- */
@@ -202,10 +233,6 @@ header {
 	background: url('../img/header-bg.jpg') top center;
 	background-size: auto 99%;
 	min-height: 900px;
-}
-.header-area {
-	position: relative;
-	z-index: 1;
 }
 .header-top {
 	padding: 16px 0;
@@ -292,8 +319,8 @@ nav {
     color: #f50;
 }
 
-/* investment */
-.investment-area {
+/* investment amount */
+.investment-amount-area {
 	padding: 30px 0 20px;
 }
 
@@ -403,11 +430,16 @@ nav {
     padding: 40px 0 80px;
 }
 .owl-nav {
-    background: red;
-    position: absolute;
-    left: 41%;
-    min-width: 250px;
-    bottom: 11px;
+	background: red;
+	position: absolute;
+	left: 50%;
+	min-width: 250px;
+	bottom: 11px;
+	transform: translate(-50%, 0);
+	-webkit-transform: translate(-50%, 0);
+	-moz-transform: translate(-50%, 0);
+	-ms-transform: translate(-50%, 0);
+	-o-transform: translate(-50%, 0);
 }
 
 .owl-carousel .owl-nav .owl-prev,.owl-carousel .owl-nav .owl-next {
@@ -440,6 +472,405 @@ nav {
 .owl-theme .owl-dots .owl-dot span {
     background: #000;
 }
+
+/* invest smarly section */
+.invest-smartly {
+	background: url('../img/invest-bg.jpg');
+}
+.invest-smartly-icon {
+	background: white;
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+	border-radius: 50%;
+	box-shadow: 0px 2px 8px 0px #00000073;
+	margin-bottom: 15px;
+
+}
+.invest-smartly-btn {
+	color: #1d193b;
+}
+.invest-smartly-btn i {
+	margin-top: 3px;
+}
+.withdraw-card {
+    margin-top: 160px;
+}
+.deposit-card {
+    margin-top: 75px;
+}
+.signUp-card {
+    margin-top: 115px;
+}
+
+/* advantage section */
+#advantage {
+	background: url('../img/advantage-bg.jpg') center;
+}
+.advantage-wrapper {
+	position: relative;
+	z-index: 10000;
+}
+.advantage-icon i {
+    font-size: 115px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+/* investment-plan section */
+#investment-plan {
+	background: url('../img/investment-bg.jpg');
+	background-size: 100%;
+}
+.investment-plan-single-card {
+	box-shadow: -1px 4px 19px 5px #80808070;
+	overflow: hidden;
+}
+.investment-card-img-box {
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    overflow: hidden;
+    width: 253px;
+    height: 200px;
+    margin-left: -3px;
+    margin-top: -85px;
+}
+.investment-card-img-box img{
+	margin-top: 85px;
+}
+.investment-card-icon {
+    position: absolute;
+    border: 0;
+    left: 50%;
+    transform: translate(-50%, -36px);
+    background: #fff;
+    padding: 13px;
+    border-radius: 50%;
+}
+.deposit-percent {
+    font-size: 60px;
+    margin-top: 40px;
+    display: inline-block;
+}
+.deposit-amount {
+    padding: 10px;
+}
+
+/* affiliate section */
+#affiliate {
+	background: url('../img/affiliate-bg.jpg') center;
+	background-repeat: no-repeat;
+	background-size: 116%;
+	background-position: bottom;
+
+}
+.join-btn {
+    background-image: linear-gradient(169deg,#e40015,#750075);
+}
+
+/* membership section */
+.membership-content-area {
+    background: #fff;
+    margin-top: -128px;
+	box-shadow: 0px 10px 20px 0px #80808036;
+	margin-bottom: 40px;
+}
+.membership-img {
+    padding: 0px 15px;
+}
+.membership-content {
+    padding: 55px 70px 50px 15px;
+}
+.membership-card {
+	border: 1px solid #D6D7D7;
+    padding: 4px 0px 12px 12px;
+}
+.membership-card i {
+    float: left;
+	color: #5421d5;
+	font-size: 60px;
+	margin-top: 5px;
+	margin-right: 20px;
+}
+.ren-people1:before {
+    content: "j";
+}
+.ren-people2:before {
+    content: "k";
+}
+.ren-people3:before {
+    content: "l";
+}
+
+/* deposit-withdraw section */
+.deposit-withdraw-left {
+    padding: 120px 140px;
+    background: url(../img/payment-bg.png);
+    background-repeat: no-repeat;
+	background-position: 70px 35px;
+	background-size: 58%;
+}
+.dep-withdraw-icon-area {
+    margin-left: -25px;
+	margin-top: 5px;
+	position: relative;
+	z-index: 5;
+}
+.dep-withdraw-icon-area::after {
+    position: absolute;
+    content: " ";
+    background: #F7F7F7;
+    width: 94%;
+    height: 184%;
+    border-radius: 50%;
+    top: -54px;
+	left: -14px;
+	z-index: -1;
+}
+.dep-withdraw-left-icon {
+    border: 1px solid #9d9cef;
+    width: 93px;
+    border-radius: 10px;
+    margin: 8px;
+    height: 80px;
+	padding-top: 8px;
+}
+.dep-withdraw-left-icon span {
+	font-size: 12px;
+	display: inline-block;
+	margin-top: 4px;
+}
+
+.credit-card-icon {
+    margin-bottom: 7px;
+}
+.paypal-icon {
+	margin-bottom: 20px;
+}
+.payment-option-btn {
+    text-decoration: underline;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #3c3636;
+    padding-left: 21%;
+	margin-top: 25px;
+	position: relative;
+	z-index: 5;
+}
+.dep-withdraw-right {
+    padding-right: 105px;
+    padding-top: 80px;
+}
+.withdraw-time-card {
+    border: 1px solid #e2d6d6;
+	padding: 30px;
+	margin-bottom: 30px;
+}
+.ren-withdraw2:before {
+    content: "1";
+}
+.ren-deposit5:before {
+	content: "Q";
+}
+.withdraw-icon {
+    float: left;
+    margin-right: 25px;
+    border: 1px solid #dcd4d4;
+    border-radius: 50%;
+    padding: 10px;
+}
+.withdraw-icon i {
+	background-image: linear-gradient(90deg,#3b26db 1%,#7b19cb);
+	color: white;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    display: inline-block;
+    padding-top: 8px;
+    font-size: 40px;
+}
+.withdraw-icon i.bg-grd4 {
+	background-image: linear-gradient(90deg,#e45b2d,#f07921 33%,#fc9715);
+}
+
+/* transaction section */
+.ren-investo:before {
+    content: "e";
+}
+.ren-deposits:before {
+    content: "R";
+}
+
+.transaction-nav {
+    /* background: rgb(212, 193, 193); */
+    width: 100%;
+    border: 1px solid #f50;
+    display: flex;
+    justify-content: center;
+    padding: 13px 15px;
+    border-radius: 50px;
+}
+.transaction-nav li {
+	border: none;
+	margin: 0 8px;
+}
+.transaction-btn {
+    display: flex;
+    justify-content: space-between;
+    background: #FF5500;
+	padding: 5px 19px;
+	color: #fff;
+    border-radius: 50px;
+}
+.trans-btn-name {
+	margin-left: 15px;
+    margin-top: 5px;
+}
+.trans-btn-name span {
+	display: block;
+}
+.transaction-btn:hover {
+	color: #fff;
+}
+.transaction-btn.active {
+	background-image: linear-gradient(169deg,#e40015,#750075);
+	box-shadow: 0px 7px 11px #5835e4a3;
+}
+.trans-table {
+	background: #fff;
+	box-shadow: 2px 2px 3px 2px gray;
+}
+.trans-table thead {
+	background: #EEF4FB;
+}
+.trans-table th {
+	font-size: 14px;
+	font-weight: 700;
+}
+#fs-16 {
+	font-size: 16px;
+}
+.trans-table thead tr th:first-child {
+    padding-left: 30px;
+    width: 260px;
+    text-align: left;
+}
+.trans-table-name-col {
+    padding-left: 20px;
+}
+.trans-table tr {
+	font-size: 18px;
+	font-weight: 600;
+}
+.trans-table tr td {
+    line-height: 70px;
+}
+.ren-bitcoins:before {
+    content: "D";
+}
+.trans-table-name-col img {
+    width: 60px;
+    border: 2px solid #f50;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.trans-table-name-col span {
+    font-size: 16px;
+    font-weight: 700;
+}
+.trans-tbale thead th.th-name {
+	width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

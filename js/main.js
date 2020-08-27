@@ -69,7 +69,7 @@
 
 
 // owlCarousel------------------------
-$(".owl-carousel").owlCarousel({
+$(".owl-carousel-choose").owlCarousel({
     margin:30,
     autoplay:true,
     autoplayTimeout:2000,
@@ -85,6 +85,27 @@ $(".owl-carousel").owlCarousel({
         },
         1000:{
             items:5,
+        }
+
+    }
+   
+});
+$(".owl-carousel-investment-plan").owlCarousel({
+    margin:30,
+    autoplay:true,
+    autoplayTimeout:200000000,
+    nav:true,
+    dots:true,
+    navText:['<i class="icofont-thin-left"></i>','<i class="icofont-thin-right"></i>'],
+    responsive:{
+        0:{
+            items:1,
+        },
+        600:{
+            items:3,
+        },
+        1000:{
+            items:4,
         }
 
     }

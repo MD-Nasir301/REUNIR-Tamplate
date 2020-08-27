@@ -123,7 +123,7 @@
 }
 /*-- Margin Bottom --*/
 
-.mb-5 {
+.mb-5px {
 	margin-bottom: 5px;
 }
 .mb-10 {
@@ -245,7 +245,7 @@
 }
 
 /*-- Padding Top --------------------*/
-.pt-5 {
+.pt-5px {
 	padding-top: 5px;
 }
 .pt-10 {
@@ -681,7 +681,7 @@
 	font-size: 24px;
 }
 .fs-25 {
-	font-size: 24px;
+	font-size: 25px;
 }
 .fs-30 {
 	font-size: 30px;
