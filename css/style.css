@@ -156,6 +156,9 @@ a,
 .theme-overlay2::before {
 		opacity: 0.5;
 }
+.separator {
+	border-top: 1px solid red;
+}
 
 /* scrollUp Style ------------------------------- */
 /* #scrollUp {
@@ -192,13 +195,13 @@ a,
 	text-shadow: none;
 }
 *::-moz-placeholder {
-	color: #555555;
-	font-size: 14px;
+	color: #B2A5BF;
+	font-size: 16px;
 	opacity: 1;
 }
 *::placeholder {
-	color: #555555;
-	font-size: 14px;
+	color: #B2A5BF;
+	font-size: 16px;
 	opacity: 1;
 }
 input::-webkit-outer-spin-button,
@@ -340,8 +343,8 @@ nav {
     margin-right: 10px;
 }
 .investment-input-field input::placeholder {
-	color:#8389B7;
-	font-size: 18px;
+	color:#B2A5BF;
+	font-size: 16px;
 }
 .investment-input-field select > option {
 	color: #000;
@@ -353,6 +356,9 @@ nav {
 }
 
 /* about-us  */
+.about-us-left {
+    padding-left: 100px;
+}
 .about-us-single-box{
 	min-height: 215px;
 }
@@ -385,7 +391,6 @@ nav {
 	position: relative;
     min-height: 645px;
     background: url(../img/about-bg.jpg);
-    margin-right: -119px;
 }
 .video-play-btn {
 	background: #e08708c4;
@@ -797,12 +802,279 @@ nav {
 	padding: 10px 30px;
 }
 
+/* our-app section */
+.ren-calculator1:before {
+    content: "F";
+}
+.ren-paperless:before {
+    content: "g";
+}
+.ren-dashboard:before {
+    content: "K";
+}
+.ren-google-play:before {
+    content: "a";
+}
+.ren-apple-store:before {
+    content: "A";
+}
+.our-app-left ul li {
+    display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.our-app-left ul li i {
+    font-size: 40px;
+    display: inline-block;
+    margin-right: 30px;
+    padding: 5px;
+    color: red;
+    width: 65px;
+    border-radius: 50%;
+    height: 65px;
+    text-align: center;
+    box-shadow: 0px 0px 8px 1px #5480ff63;
+    line-height: 65px;
+}
+.our-app-left ul li span {
+    font-size: 20px;
+	font-weight: 600;
+}
+.app-btn-area {
+	display: flex;
+	margin-top: 70px;
+}
+.google-play-btn,.app-store-btn  {
+    background-image: linear-gradient(120deg,#3b26db 1%,#7b19cb);
+    display: flex;
+    width: fit-content;
+    padding: 10px 50px 6px 30px;
+    border-radius: 50px;
+	color: #fff;
+	box-shadow: 1px 7px 13px 1px #0000006b;
+}
+.app-btn-area a:hover {
+	color: #fff;
+}
+.app-btn-area a i {
+	font-size: 32px;
+	margin: 5px 10px 0 0;
+}
+
+.app-btn-area a span:nth-child(1) {
+	font-size: 12px;
+}
+.app-store-btn {
+	background-image: linear-gradient(90deg,#0184ff 1%,#01abff);
+	margin-left: 25px;
+}
+.our-app-right {
+    position: relative;
+    overflow: hidden;
+    height: 120%;
+    padding: 100px 0;
+    overflow: hidden;
+    margin-top: -80px;
+}
+.our-app-right img {
+    position: absolute;
+    width: 100%;
+}
+.our-app-right img:nth-child(1) {
+	top: 0px;
+}
+.our-app-right img:nth-child(2) {
+	top: 0px;
+	left: 3px;
+}
+.our-app-right img:nth-child(3) {
+	top: 0px;
+	left: 30%;
+}
+.our-app-right img:nth-child(4) {
+	width: 45%;
+	bottom: 0;
+}
+
+/* testimonial section */
+#testimonial {
+    background: url(../img/testimonial-bg.jpg) center;
+    background-size: cover;
+}
+.testimonial-slider.slick-initialized.slick-slider {
+    box-shadow: 0px 1px 11px #708090b0;
+	margin-bottom: 50px;
+	margin-top: 40px;
+}
+.testimonial-slider-item {
+	padding: 25px;
+}
+.slick-slider::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    bottom: -34px;
+    left: 50%;
+    transform: translate(-50%,0);
+    border-style: solid;
+    border-width: 35px 35px 0 35px;
+    border-color: #ffffff transparent transparent transparent;
+    -webkit-transform: translate(-50%,0);
+    -moz-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+    -o-transform: translate(-50%,0);
+}
+.testimonial-slider-item p {
+	padding-bottom: 12px;
+	
+}
+.testimonial-slider-item h3 {
+    padding-top: 23px;
+}
+
+.testimonial-thumb-area {
+    margin-top: 25px;
+}
+.testimonial-thumb-area img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid red;
+}
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+/* contact-us section */
+.contact-us-form {
+	box-shadow: 1px 12px 20px 0px #3937e669;
+	padding: 35px 30px;
+	
+}
+.contact-us-form p {
+	color:#1d193b;
+	margin-bottom: 10px
+}
+.contact-us-form input {
+    width: 100%;
+    padding: 13px 0;
+    border: none;
+    border-bottom: 1px solid #6d79ce73;
+    margin: 10px 0;
+}
+.contact-us-form textarea {
+	margin-top: 20px;
+    width:100%;
+    min-height: 110px;
+    border: none;
+    border-bottom: 1px solid #d4d5e0;
+}
+.submit-btn {
+    font-weight: 700;
+	background-image: linear-gradient(4deg,#ae0ee9,#2e19a7);
+	padding: 12px 32px;
+	margin: 0;
+	margin-top: 33px;
+}
+
+/* get start section */
+#get-start {
+    background: url(../img/signup-bg.jpg) center;
+    background-size: 142% 100%;
+}
+.sign-up-btn {
+    padding: 18px 35px 12px;
+    color: white;
+    border-radius: 25px;
+    font-weight: 600;
+    box-shadow: 1px 6px 15px 1px grey;
+    display: flex;
+	width: fit-content;
+	background: #FF5500;
+}
+.sign-up-btn i {
+    margin-left: 10px;
+}
+.sign-up-btn:hover {
+	color: #fff;
+}
+.ren-arrowright:before {
+	content: "B";
+	font-size: 25px;
+}
+
+/* footer section */
+#footer {
+	background: #5722D6;
+}
+.social-links ul {
+	text-align: center;
+}
+.social-links ul li {
+    display: inline-block;
+}
+.social-links ul li a {
+    display: block;
+    color: #fff;
+    padding: 7px 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.subscribe-form {
+    border: 1px solid gray;
+    padding: 10px 0px;
+    border-radius: 50px;
+}
+.subscribe-form input {
+    border: none;
+    width: 62%;
+    background: none;
+    color: #fff;
+    padding: 0 30px 0 30px;
+    margin-right: 20px;
+}
+button.subscribe-btn {
+    text-transform: uppercase;
+    color: #FFF;
+    font-weight: 700;
+    border: 2px solid #f50;
+    border-radius: 50px;
+    padding: 15px 55px;
+	background-image: linear-gradient(90deg,#0184ff 1%,#01abff);
+	cursor: pointer;
+}
+button.subscribe-btn:hover {
+    color: #FFF;
+	background: #f50;
+}
+.footer-bottom {
+    padding: 20px 0;
+    border-top: 1px solid gray;
+}
+.footer-bottom-links ul li {
+    display: inline-block;
+    margin: 0px 10px;
+}
+.footer-bottom-links ul li a {
+	color: #fff;
+	font-size: 14px;
+    font-weight: 600;
+}
 
 
 

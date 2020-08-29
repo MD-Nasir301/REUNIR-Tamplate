@@ -113,6 +113,22 @@ $(".owl-carousel-investment-plan").owlCarousel({
 });
 
 
+$('.testimonial-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: false,
+    asNavFor: '.testimonial-thumb'
+  });
+
+  $('.testimonial-thumb').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    asNavFor: '.testimonial-slider',
+    dots: false,
+    centerMode: false,
+    focusOnSelect: true
+  });
 
 
 // magnificPopup img view -----------------
