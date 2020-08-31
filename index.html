@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Place favicon.ico in the root directory -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
 
     <!-- CSS here -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <!-- <link rel="stylesheet" href="css/animate.min.css"> -->
-    <!-- <link rel="stylesheet" href="css/magnific-popup.css"> -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <!-- <link rel="stylesheet" href="css/fontawesome-all.min.css"> -->
     <!-- <link rel="stylesheet" href="css/meanmenu.css"> -->
     <link rel="stylesheet" href="css/slick.css">
@@ -28,9 +28,39 @@
 
 <body>
 
+    <nav class="sticky-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="brand-logo">
+                        <a href="#">
+                            <img src="img/logo.png" alt="">
+                            <span class="brand-name fs-20 fw-700 text-white pl-15">REUNIR</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="main-menu text-uppercase float-right">
+                        <ul class="clearfix">
+                            <li><a href="#header">Home</a></li>
+                            <li><a href="#about-us">About</a></li>
+                            <li><a href="#affiliate">Affiliates</a></li>
+                            <li><a href="#investment-plan">Plans</a></li>
+                            <li><a href="#header">Blog</a></li>
+                            <li><a href="#contact-us">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <a href="#" class="btn join-us-btn" text-uppercase">join us</a>
+                </div>
+            </div>
+        </div>
+    </nav>  
+
     <!-- HEADER section start --------------->
     <header class="theme-overlay theme-overlay2">
-        <div class="header-area">
+        <div id="header" class="header-area">
 
             <div class="header-top">
                 <div class="container">
@@ -61,7 +91,7 @@
                 </div>
             </div>
 
-            <nav>
+            <nav class="main-nav">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-3">
@@ -75,28 +105,28 @@
                         <div class="col-md-7">
                             <div class="main-menu text-uppercase float-right">
                                 <ul class="clearfix">
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Affiliates</a></li>
-                                    <li><a href="#">Plans</a></li>
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#header">Home</a></li>
+                                    <li><a href="#about-us">About</a></li>
+                                    <li><a href="#affiliate">Affiliates</a></li>
+                                    <li><a href="#investment-plan">Plans</a></li>
+                                    <li><a href="#header">Blog</a></li>
+                                    <li><a href="#contact-us">Contact</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" class="btn text-uppercase">join us</a>
+                            <a href="#" class="btn join-us-btn text-uppercase">join us</a>
                         </div>
                     </div>
                 </div>
-            </nav>
+            </nav>  
 
             <div class="banner-area pb-100">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="banner-content text-center">
-                                <h2 class="text-white text-uppercase">YOU CAN USE REUNIR FOR <span
+                                <h2 class="text-white text-uppercase">YOU CAN USE REUNIR FOR <span id="ityped"
                                         class="text-theme fw-400 ">HYIP</span> </h2>
                                 <a href="#" class="btn btn2 text-uppercase">Get Started Now!</a>
                             </div>
@@ -108,39 +138,39 @@
             <div class="our-users-area pb-45 ">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-lg-3 col-md-6">
                             <div class="single-users-box text-white text-center">
                                 <div class="users-box-icon">
                                     <i class="icofont-ui-file"></i>
                                 </div>
-                                <span class="fs-40 fw-700">36967030</span> <br>
+                                <span class="fs-40 fw-700 counter">36967030</span> <br>
                                 <h6 class="text-primary2 fw-500 fs-18 text-uppercase">REGISTERED USERS</h6>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-lg-3 col-md-6">
                             <div class="single-users-box text-white text-center">
                                 <div class="users-box-icon">
                                     <i class="icofont-world"></i>
                                 </div>
-                                <span class="fs-40 fw-700">178</span> <br>
+                                <span class="fs-40 fw-700 counter">178</span> <br>
                                 <h6 class="text-primary2 fw-500 fs-18 text-uppercase">COUNTRIES SUPPORTED</h6>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-lg-3 col-md-6">
                             <div class="single-users-box text-white text-center">
                                 <div class="users-box-icon">
                                     <i class="icofont-money"></i>
                                 </div>
-                                <span class="fs-40 fw-700">10800000</span> <br>
+                                <span class="fs-40 fw-700 counter">10800000</span> <br>
                                 <h6 class="text-primary2 fw-500 fs-18 text-uppercase">ACTIVE INVESTORS DAILY</h6>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-lg-3 col-md-6">
                             <div class="single-users-box text-white text-center">
                                 <div class="users-box-icon">
                                     <i class="icofont-users"></i>
                                 </div>
-                                <span class="fs-40 fw-700">1800000</span> <br>
+                                <span class="fs-40 fw-700 counter">1800000</span> <br>
                                 <h6 class="text-primary2 fw-500 fs-18 text-uppercase">ACTIVE INVESTORS DAILY</h6>
                             </div>
                         </div>
@@ -151,8 +181,9 @@
             <div class="investment-amount-area primary-bg">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="investment-area-left d-flex justify-content-between">
+                        <div class="col-xl-6">
+                            <div class="investment-area-left d-flex justify-content-xl-between
+                            justify-content-sm-center">
                                 <div class="investment-icon">
                                     <i class="icofont-calculator-alt-2 text-white"></i>
                                 </div>
@@ -171,24 +202,24 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-xl-6">
                             <div class="investment-area-right">
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="daily-profit text-center">
-                                            <span class="fs-40 fw-600 text-grd">212</span>
+                                            <span class="fs-40 fw-600 text-grd counter">212</span>
                                             <p class="fs-16 text-white text-uppercase">DAILY PROFIT</p>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="weekly-profit text-center">
-                                            <span class="fs-40 fw-600 text-grd">1484</span>
+                                            <span class="fs-40 fw-600 text-grd counter">1484</span>
                                             <p class="fs-16 text-white text-uppercase">Weekly PROFIT</p>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="monthly-profit text-center">
-                                            <span class="fs-40 fw-600 text-grd">6360</span>
+                                            <span class="fs-40 fw-600 text-grd counter">6360</span>
                                             <p class="fs-16 text-white text-uppercase">Monthly PROFIT</p>
                                         </div>
                                     </div>
@@ -204,13 +235,13 @@
     </header>
     <!-- HEADER section end --------------->
 
-    <main>
 
+    <main>
     <!-- ABOUT-US section start -->
     <section id="about-us" class="about-us pt-115 pb-70">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-7">
+                <div class="col-xl-7">
                     <div class="about-us-left">
                         <div class="sec-heading">
                             <h3 class="fs-24 fw-600 mb-20">WELCOME TO REUNIR</h3>
@@ -293,10 +324,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 p-0">
+                <div class="col-xl-5 p-0">
                     <div class="about-us-right">
                         <div class="video-play-btn">
-                            <i class="icofont-play-alt-3 text-grd"></i>
+                            <a class="popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto"><i class="icofont-play-alt-3 text-grd"></i></a>         
                         </div>
                     </div>
                 </div>
@@ -313,7 +344,7 @@
                 <h2 class="fs-50 fw-700 text-grd2">WHY SHOULD CHOOSE US?</h2>
             </div>
             <div class="row">
-                <div class="col-md-8 mx-auto pr-0 text-center">
+                <div class="col-lg-8 mx-auto pr-0 text-center">
                     <p class="fs-18 text-cent er">Our service gives you better result and savings, as per your
                         requirement and you can manage your investments from anywhere either form home or work place, at
                         any time.</p>
@@ -436,13 +467,13 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-7 mx-auto pr-0 text-center">
+                <div class="col-lg-7 mx-auto pr-0 text-center">
                     <p class="fs-18 text-cent er">It’s a simple way to start invest.You don’t need a deep wallet to
                         start behoof. Pick an amount you can afford, and build your behoof over time.</p>
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container-lg">
             <div class="invest-smartly-cards-wrap">
                 <div class="row">
                     <div class="col-md-4">
@@ -535,14 +566,14 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-7 mx-auto pr-0 text-center">
+                    <div class="col-lg-7 mx-auto pr-0 text-center">
                         <p class="fs-18 text-cent er">Reunir provides a straightforward and transparent mechanism to
                             attract investments and make more profits.</p>
                     </div>
                 </div>
             </div>
             <div class="investment-plan-carousel pb-10">
-                <div class="container">
+                <div class="container-xl">
                     <div class="owl-carousel owl-carousel-investment-plan owl-theme">
 
                         <div class="item text-center investment-plan-single-card">
@@ -797,11 +828,12 @@
     <!-- INVESTMENT-PLAN section end -->
 
     <!-- INVESTMENT AMOUNT section start -->
-    <section class="investment-amount-area primary-bg">
+    <div class="investment-amount-area primary-bg">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="investment-area-left d-flex justify-content-between">
+                <div class="col-xl-6">
+                    <div class="investment-area-left d-flex justify-content-xl-between
+                    justify-content-lg-center">
                         <div class="investment-icon">
                             <i class="icofont-calculator-alt-2 text-white"></i>
                         </div>
@@ -809,7 +841,8 @@
                             <p class="text-uppercase text-white fw-100 pb-5px m-0">ENTER INVESTMENT AMOUNT</p>
                             <div class="investment-input-field">
                                 <input placeholder="$200" type="number">
-                                <select class="btn btn3 text-capitalize" name="invest" id="invest-option-select">
+                                <select class="btn btn3 text-capitalize" name="invest"
+                                    id="invest-option-select">
                                     <option value="1%">1% Daily For Ever</option>
                                     <option value="2%">2% Daily For Ever</option>
                                     <option value="3%">3% Daily For Ever</option>
@@ -819,7 +852,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-xl-6">
                     <div class="investment-area-right">
                         <div class="row">
                             <div class="col-md-4">
@@ -845,7 +878,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <!-- INVESTMENT AMOUNT section end -->
 
     <!-- AFFILIATE  section start  -->
@@ -857,7 +890,7 @@
             </div>
             <div class="affiliate-content text-center">
                 <div class="row">
-                    <div class="col-md-8 mx-auto">
+                    <div class="col-lg-8 mx-auto">
                         <p class="text-center">We give you the opportunity to earn money by recommending our website to others. You can start earning money even if you do not invest. Promote our website wherever you are. Create posts on online forums and social networks. Remember to use the referral link. Build your structure and receive a commission from three levels whenever someone makes a deposit. Earnings from the affiliate program are immediately available in the account balance. You can invest or withdraw funds at any time.</p>
                         <a href="#" class="btn btn4 join-btn" >I want to join</a>
                     </div>
@@ -872,12 +905,12 @@
         <div class="container p-0">
             <div class="membership-content-area  no-gutters">
                 <div class="row">
-                    <div class="col-md-2">
+                    <div class="col-lg-2 d-md-none d-lg-block">
                         <div class="membership-img">
                             <img src="img/referral-img.png" alt="">
                         </div>
                     </div>
-                    <div class="col-md-10">
+                    <div class="col-lg-10">
                         <div class="membership-content">
                             <h4 class="fs-24 fw-600 text-theme  ">REFERRAL COMMISSION AND</h4>
                             <h2 class="fs-50 fw-700">MEMBERSHIP LEVEL</h2>
@@ -922,7 +955,7 @@
         </div>
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-8">
+                <div class="col-lg-8">
                     <p class="text-center">Depositing or withdrawing money is simple.We support several payment methods, which depend on what country your payment account is located in.</p>
                 </div>
             </div>
@@ -993,7 +1026,7 @@
     <section id="transaction" class="transaction pt-190 pb-90">
         <div class="container pb-60">
             <div class="row justify-content-center">
-                <div class="col-md-8">
+                <div class="col-lg-8">
                     <div class="sec-heading text-center">
                         <h3 class="fs-24 fw-600 mb-15">User Statistics</h3>
                         <h2 class="fs-50 fw-700 text-grd2">LATEST TRANSACTION</h2>
@@ -1007,7 +1040,7 @@
         <div class="transaction-nav-area pb-30">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-7 mx-auto">
+                    <div class="col-xl-7 col-lg-9  col-md-11 mx-auto">
                         <div class="transaction-nav-area">
                             <ul class="nav nav-tabs transaction-nav" id="myTab" role="tablist">
                                 <li class="nav-item" role="presentation">
@@ -1311,7 +1344,7 @@
     <section id="out-app" class="our-app pt-100 pb-120">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-7">
+                <div class="col-lg-7">
                     <div class="our-app-left pl-100">
                         <div class="sec-heading">
                             <h3 class="fs-24 fw-600 mb-15">Learn, Plan, Invest in our app</h3>
@@ -1343,7 +1376,7 @@
                     </div>
 
                 </div>
-                <div class="col-md-5 p-0">
+                <div class="col-md-5 p-0 d-none d-lg-block">
                     <div class="our-app-right">
                         <img src="img/download-bg-ellipse-01.png" alt="">
                         <img src="img/download-bg-ellipse-02.png" alt="">
@@ -1361,7 +1394,7 @@
     <section id="testimonial" class="testimonial pt-120 pb-100">
         <div class="container pb-60">
             <div class="row justify-content-center">
-                <div class="col-md-8">
+                <div class="col-xl-8 col-lg-10">
                     <div class="sec-heading text-center">
                         <h3 class="fs-24 fw-600 mb-15">Happy Clients</h3>
                         <h2 class="fs-50 fw-700 text-grd2 text-uppercase">TESTIMONIAL OF CLIENTS</h2>
@@ -1419,26 +1452,127 @@
     </section>
     <!-- TESTIMONIAL section end -->
 
+    <!-- QUESTION section start  -->
+    <section id="question" class="question pt-100 pb-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="sec-heading text-center mb-40">
+                    <h3 class="fs-24 fw-600 mb-15">Got Any Questions</h3>
+                    <h2 class="fs-50 fw-700 text-grd2">WE'VE GOT ANSWERS</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="question-nav-area pb-50">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <a class="question-nav-btn active" id="basic-ques-tab" data-toggle="tab" href="#basic-ques" role="tab" aria-controls="basic-ques" aria-selected="true">BASIC QUESTION</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="question-nav-btn" id="investing-ques-tab" data-toggle="tab" href="#investing-ques" role="tab" aria-controls="investing-ques" aria-selected="false">INVESTING QUESTION</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="question-nav-btn" id="withdrawal-ques-tab" data-toggle="tab" href="#withdrawal-ques" role="tab" aria-controls="withdrawal-ques" aria-selected="false">WITHDRAWAL QUESTION</a>
+                        </li>
 
+                        <li class="nav-item" role="presentation">
+                          <a class="question-nav-btn" id="referral-ques-tab" data-toggle="tab" href="#referral-ques" role="tab" aria-controls="referral-ques" aria-selected="false">REFERRAL PROGRAM</a>
+                        </li>
 
+                      </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                <div class="question-content-area">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="basic-ques" role="tabpanel" aria-labelledby="basic-ques-tab">
+                            <div class="accordion" id="accordionExample">
+                                <div class="card single-question">
+                                  <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                      <button class="question-collapse-btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        What Are The Main Advantages Of Reunir?
+                                      </button>
+                                    </h2>
+                                  </div>
+                                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        All stored data on our servers remains protected via encryption technology all the time. All account related transactions done by our clients are mediated exclusively via secured internet connections.
+                                    </div>
+                                  </div>
+                                </div>
 
+                                <div class="card single-question">
+                                  <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0">
+                                      <button class="question-collapse-btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                        Is It Free Of Charge To Open An Account?
+                                      </button>
+                                    </h2>
+                                  </div>
+                                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        All stored data on our servers remains protected via encryption technology all the time. All account related transactions done by our clients are mediated exclusively via secured internet connections.
+                                    </div>
+                                  </div>
+                                </div>
 
+                                <div class="card single-question">
+                                  <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                      <button class="question-collapse-btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                        Is It Free Of Charge To Open An Account?
+                                      </button>
+                                    </h2>
+                                  </div>
+                                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        All stored data on our servers remains protected via encryption technology all the time. All account related transactions done by our clients are mediated exclusively via secured internet connections.
+                                    </div>
+                                  </div>
+                                </div>
 
-
-
+                                <div class="card single-question">
+                                  <div class="card-header" id="headingFour">
+                                    <h2 class="mb-0">
+                                      <button class="question-collapse-btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                        Is It Free Of Charge To Open An Account?
+                                      </button>
+                                    </h2>
+                                  </div>
+                                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        All stored data on our servers remains protected via encryption technology all the time. All account related transactions done by our clients are mediated exclusively via secured internet connections.
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="investing-ques" role="tabpanel" aria-labelledby="investing-ques-tab">
+                            
+                        </div>
+                        <div class="tab-pane fade" id="withdrawal-ques" role="tabpanel" aria-labelledby="withdrawal-ques-tab">...</div>
+                        <div class="tab-pane fade" id="referral-ques" role="tabpanel" aria-labelledby="referral-ques-tab">...</div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- QUESTION section end -->
 
     <!-- GET START section start -->
     <section id="get-start" class="get-start pb-75 pt-80 theme-overlay">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-xl-6 col-lg-8">
                     <div class="get-start-left">
                         <h4 class="fw-600 text-white">CREATE YOUR PERSONAL ACCOUNT</h4>
                         <h2 class="fs-50 fw-700 text-grd">GET STARTED NOW</h2>
                         <p class="text-white">Get Started Now,Create your personal account as a first step to become a sucessfull investor.Are you ready to start earning with us?</p>
                     </div>
                 </div>
-                <div class="col-md-6 d-flex justify-content-end align-items-center">
+                <div class="col-xl-6 col-lg-4 d-flex justify-content-lg-end align-items-center">
                     <div class="get-start-right">
                         <a href="#" class="sign-up-btn text-uppercase">SIGN UP Now <i class="ren-arrowright"></i> </a>
                     </div>
@@ -1452,7 +1586,7 @@
     <section id="contact-us" class="contact-us pt-120 pb-120">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-8">
+                <div class="col-xl-8 col-lg-10">
                     <div class="sec-heading text-center">
                         <h3 class="fs-24 fw-600 mb-15">Contact Us</h3>
                         <h2 class="fs-50 fw-700 text-grd2">GET IN TOUCH</h2>
@@ -1461,12 +1595,12 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 d-none d-lg-block">
                     <div class="contact-us-left">
                         <img src="img/contact-us.jpg" alt="">
                     </div>
                 </div>
-                <div class="col-md-5">
+                <div class="col-xl-5 col-lg-6">
                     <div class="contact-us-right">
                         <div class="contact-us-form">
                             <p class="fs-24 fw-700
@@ -1482,12 +1616,21 @@
         </div>
     </section>
     <!-- CONTACT-US section end -->
-
     </main>
+
 
     <!-- FOOTER section start -->
     <footer>
-    <section id="footer" class="footer pt-120">
+    <section class="wave-bg">
+        <div class="wave-bg-area">
+            <img src="img/wave.png" class="img-fluid wave-one" alt="">
+            <img src="img/wave.png" class="img-fluid wave-two" alt="">
+            <img src="img/wave.png" class="img-fluid wave-three" alt="">
+            <img src="img/wave.png" class="img-fluid wave-four" alt="">
+            <img src="img/wave.png" class="img-fluid wave-five" alt="">
+        </div>
+    </section>              
+    <section id="footer-content" class="footer-content pt-120">
         <div class="container">
             <div class="footer-top pb-120">
                 <div class="social-links pb-40">
@@ -1503,7 +1646,7 @@
                     <h2 class="fs-50 fw-700 text-grd2">TO GET EXCLUSIVE BENEFITS</h2>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-md-7">
+                    <div class="col-xl-7 col-lg-8 col-md-11">
                         <div class="subscribe-form">
                             <input type="email" placeholder="Your Email Address">
                             <button type="submit" class="subscribe-btn">Subscribe</button>
@@ -1534,17 +1677,24 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/ityped.min.js"></script>
     <!-- <script src="js/isotope.pkgd.min.js"></script> -->
-    <!-- <script src="js/one-page-nav-min.js"></script> -->
+    <!-- counter.js start -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- counter.js end -->
+    <script src="js/one-page-nav-min.js"></script>
     <script src="js/slick.min.js"></script>
     <!-- <script src="js/jquery.meanmenu.min.js"></script> -->
     <!-- <script src="js/ajax-form.js"></script> -->
     <!-- <script src="js/wow.min.js"></script> -->
     <!-- <script src="js/jquery.scrollUp.min.js"></script> -->
     <!-- <script src="js/imagesloaded.pkgd.min.js"></script> -->
-    <!-- <script src="js/jquery.magnific-popup.min.js"></script> -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
     <!-- <script src="js/plugins.js"></script> -->
     <script src="js/main.js"></script>
+
+
 </body>
 
 </html>

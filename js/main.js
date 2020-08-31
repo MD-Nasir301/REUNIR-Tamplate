@@ -8,15 +8,32 @@
 // });
 
 
-// One Page Nav---------------
-// var top_offset = $('.header-area').height() - 10;
-// $('.main-menu nav ul').onePageNav({
-// 	currentClass: 'active',
-// 	scrollOffset: top_offset,
-// });
+
+// Sticky nav ------------------
+window.addEventListener("scroll", function(){
+    var nav = document.querySelector('nav');
+    nav.classList.toggle("sticky", window.scrollY > 100);
+});
+      
+
+// ityped -------------------
+ityped.init(document.querySelector("#ityped"), {
+    showCursor: true,
+    strings: ['DEPOSIT', 'BETTING', 'CRYPTOCURRENCY', 'EARN MONEY ',' HIGH YIELD','HYIP','INVESTMENT ',' PROFIT','SPORTING','TOURNAMENT','MUCH MORE...'],
+    loop: true,
+    backSpeed: 50,
+    typeSpeed: 50,
+    cursorChar: "",
+    backDelay:  1100,
+  });
 
 
-// Scroll Top--------------
+// counter ------------------
+  $('.counter').counterUp({
+    delay: 10,
+    time: 1500
+});
+// Scroll Top----------------
 // $(window).on('scroll', function () {
 // 	var scroll = $(window).scrollTop();
 // 	if (scroll < 245) {
@@ -27,7 +44,7 @@
 // });
 
 
-// mainSlider----------------------
+// mainSlider----------------
 // function mainSlider() {
 // 	var BasicSlider = $('.slider-active');
 // 	BasicSlider.on('init', function (e, slick) {
@@ -83,13 +100,17 @@ $(".owl-carousel-choose").owlCarousel({
         600:{
             items:3,
         },
-        1000:{
+        992:{
+            items:4,
+        },
+        1200:{
             items:5,
         }
 
     }
    
 });
+
 $(".owl-carousel-investment-plan").owlCarousel({
     margin:30,
     autoplay:true,
@@ -112,7 +133,6 @@ $(".owl-carousel-investment-plan").owlCarousel({
    
 });
 
-
 $('.testimonial-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -130,14 +150,19 @@ $('.testimonial-slider').slick({
     focusOnSelect: true
   });
 
-
 // magnificPopup img view -----------------
-// $('.popup-image').magnificPopup({
-// 	type: 'image',
-// 	gallery: {
-// 	  enabled: true
-// 	}
-// });
+$(document).ready(function() {
+    $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+
+        fixedContentPos: false
+    });
+});
+
 
 
 // magnificPopup video view---------------------
@@ -187,9 +212,26 @@ $('.testimonial-slider').slick({
 // 	activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
 // });
 
+// One Page Nav---------------
+// var top_offset = $('.header-area').height() -0;
+
+// $('.main-menu ul').onePageNav({
+//     currentClass: 'active',
+//     scrollSpeed: 2000,
+// 	scrollThreshold: 0,
+// 	scrollOffset: top_offset,
+// });
+// $('.main-menu ul').onePageNav({
+// 	currentClass: 'current',
+// 	changeHash: false,
+// 	scrollSpeed: 750,
+// 	scrollThreshold: 0.5,
+// 	easing: 'swing',
+// });
+
 
 // WOW active-------------------
-// new WOW().init();
+// new WOW().init(); 
 
 
 })(jQuery);

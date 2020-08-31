@@ -6,6 +6,7 @@
   Version: 1.0
 */
 
+
 /* CSS Index
 -----------------------------------
 1. Theme default css
@@ -39,6 +40,7 @@
 	font-family: 'Open Sans', sans-serif;
 	font-weight: normal;
 	font-style: normal;
+	overflow-x: hidden;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -269,6 +271,19 @@ header {
 nav {
 	padding: 13px 0;
 }
+.sticky-nav {
+	display: none;
+    padding: 12px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #231846;
+	width: 100%;
+	z-index: 99999;
+}
+.sticky-nav.sticky {
+	display: block;
+}
 .brand-logo {
 	margin-top: 2px;
 }
@@ -301,6 +316,18 @@ nav {
 	margin-top: 85px;
 	margin-bottom: 45px;
 }
+.ityped-cursor {
+	position: relative;
+}
+.ityped-cursor::after {
+	position: absolute;
+	content: "";
+	width: 2px;
+	height: 110px;
+	background: rgb(223, 203, 203);
+	top: 0px;
+	right: -12px;
+}
 
 /* our-users section*/
 .single-users-box {
@@ -326,7 +353,6 @@ nav {
 .investment-amount-area {
 	padding: 30px 0 20px;
 }
-
 .investment-input-field {
 	border: 1px solid #8389B7;
 	background: #272E71;
@@ -446,7 +472,6 @@ nav {
 	-ms-transform: translate(-50%, 0);
 	-o-transform: translate(-50%, 0);
 }
-
 .owl-carousel .owl-nav .owl-prev,.owl-carousel .owl-nav .owl-next {
     position: absolute;
     font-size: 25px;
@@ -481,17 +506,41 @@ nav {
 /* invest smarly section */
 .invest-smartly {
 	background: url('../img/invest-bg.jpg');
+	background-repeat: no-repeat;
+}
+.invest-smartly-card:hover > .invest-smartly-icon{
+	transform: perspective(3d);
+	transform: rotateY( 180deg);
+	-webkit-transform: rotateY( 180deg);
+	-moz-transform: rotateY( 180deg);
+	-ms-transform: rotateY( 180deg);
+	-o-transform: rotateY( 180deg);
+
 }
 .invest-smartly-icon {
+	transform: perspective(3d);
+	transform: rotateY(0deg);
 	background: white;
-    display: inline-block;
-    width: 120px;
-    height: 120px;
-    line-height: 120px;
-	border-radius: 50%;
+	display: inline-block;
+	width: 120px;
+	height: 120px;
+	line-height: 120px;
+	border-radius:50%;
+	transition: .9s;
 	box-shadow: 0px 2px 8px 0px #00000073;
 	margin-bottom: 15px;
-
+	-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+	-ms-transform: rotateY(0deg);
+	-o-transform: rotateY(0deg);
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	-ms-border-radius:50%;
+	-o-border-radius:50%;
+	-webkit-transition: .9s;
+	-moz-transition: .9s;
+	-ms-transition: .9s;
+	-o-transition: .9s;
 }
 .invest-smartly-btn {
 	color: #1d193b;
@@ -646,7 +695,6 @@ nav {
 	display: inline-block;
 	margin-top: 4px;
 }
-
 .credit-card-icon {
     margin-bottom: 7px;
 }
@@ -708,9 +756,7 @@ nav {
 .ren-deposits:before {
     content: "R";
 }
-
 .transaction-nav {
-    /* background: rgb(212, 193, 193); */
     width: 100%;
     border: 1px solid #f50;
     display: flex;
@@ -901,12 +947,14 @@ nav {
     background: url(../img/testimonial-bg.jpg) center;
     background-size: cover;
 }
-.testimonial-slider.slick-initialized.slick-slider {
-    box-shadow: 0px 1px 11px #708090b0;
+.testimonial-slider {
 	margin-bottom: 50px;
 	margin-top: 40px;
 }
 .testimonial-slider-item {
+    background: white;
+	box-shadow: 0px 1px 11px #708090b0;
+	width: 530px;
 	padding: 25px;
 }
 .slick-slider::before {
@@ -943,21 +991,69 @@ nav {
     border: 3px solid red;
 }
 
+/* question section */
+.question-nav-area > .nav-tabs {
+    border-bottom: none;
+}
+.question-nav-btn {
+    background: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin: 5px;
+    color: #0e0e0e;
+    font-weight: 600;
+    text-transform: uppercase;
+    box-shadow: 0px 3px 14px 0px #0000ff69;
+}
+.question-nav-btn.active {
+	background-image: linear-gradient(169deg,#e40015,#750075);
+	color: #fff;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.single-question {
+    border: none;
+	box-shadow: 0px 0px 20px 0px #4521d838;
+	margin-bottom: 20px;
+}
+.single-question .card-body {
+    border-top: 2px solid #d2c8c8;
+    box-shadow: 0px 2px 13px 0px #7758f33b;
+}
+div.card-header {
+    background: white;
+    padding: 0px 20px;
+    border: none;
+}
+button.question-collapse-btn {
+    color: #143250;
+    border: none;
+    width: 100%;
+    background: none;
+    font-size: 21px;
+	font-weight: 600;
+	padding: 20px;
+	position: relative;
+	cursor: pointer;
+}
+.question-collapse-btn::after {
+    position: absolute;
+    background-image: url(../img/down-icon.png);
+    content: "";
+    right: -6px;
+    width: 40px;
+    height: 45px;
+    top: 12px;
+}
+.collapse.show::after {
+    position: absolute;
+    background: #fff;
+    background-image: url(../img/up-icon.png);
+    content: "";
+    right: 14px;
+    width: 40px;
+    height: 45px;
+    top: 12px;
+}
 
 /* contact-us section */
 .contact-us-form {
@@ -1018,9 +1114,79 @@ nav {
 }
 
 /* footer section */
-#footer {
+#footer-content {
 	background: #5722D6;
 }
+.wave-bg-area {
+    position: relative;
+    z-index: -1;
+	height: 100px;
+	overflow: hidden;
+}
+.wave-bg-area img{
+	position: absolute;
+}
+.wave-bg-area .wave-one {
+	top: 2%;
+	left:  -100%;
+	animation: wave-animation-one 30s linear 0s infinite ;
+	-webkit-animation: wave-animation-one 30s linear 0s infinite ;
+}
+.wave-bg-area .wave-two {
+	top: 0;
+	left: 0%;
+	animation: wave-animation-two 35s linear 2s infinite ;
+	-webkit-animation: wave-animation-two 35s linear 2s infinite ;
+}
+.wave-bg-area .wave-three {
+	top: 2%;
+	left: 10%;
+	animation: wave-animation-three 80s linear 0s infinite ;
+	-webkit-animation: wave-animation-three 80s linear 0s infinite ;
+}
+.wave-bg-area .wave-four {
+	top: 6%;
+	left: -39%;
+	animation: wave-animation-four 10s linear 0s infinite ;
+	-webkit-animation: wave-animation-four 10s linear 0s infinite ;
+}
+.wave-bg-area .wave-five {
+	top: 12%;
+	left: 20%;
+	animation: wave-animation-five 50s linear 0s infinite ;
+	-webkit-animation: wave-animation-five 50s linear 0s infinite ;
+}
+@keyframes wave-animation-one {
+	50% {
+	left: 90%;
+	top: 25%;
+	}
+}
+@keyframes wave-animation-two {
+	50% {
+	left: -80%;
+	top: 15%;
+	}
+}
+@keyframes wave-animation-three {
+	50% {
+	left: 20%;
+	top: 5%;
+	}
+}
+@keyframes wave-animation-four {
+	50% {
+	left: -22%;
+	top: 7%;
+	}
+}
+@keyframes wave-animation-five {
+	50% {
+	left: 40%;
+	top: 1%;
+	}
+}
+
 .social-links ul {
 	text-align: center;
 }
@@ -1075,92 +1241,6 @@ button.subscribe-btn:hover {
 	font-size: 14px;
     font-weight: 600;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
