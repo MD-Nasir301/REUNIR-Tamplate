@@ -268,11 +268,14 @@ header {
 }
 
 /* nav */
+.main-nav-area {
+	height: 82px;
+	width: 100%;
+}
 nav {
 	padding: 13px 0;
 }
 .sticky-nav {
-	display: none;
     padding: 12px 0;
     position: fixed;
     top: 0;
@@ -280,9 +283,6 @@ nav {
     background: #231846;
 	width: 100%;
 	z-index: 99999;
-}
-.sticky-nav.sticky {
-	display: block;
 }
 .brand-logo {
 	margin-top: 2px;

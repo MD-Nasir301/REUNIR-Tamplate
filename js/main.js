@@ -12,7 +12,7 @@
 // Sticky nav ------------------
 window.addEventListener("scroll", function(){
     var nav = document.querySelector('nav');
-    nav.classList.toggle("sticky", window.scrollY > 100);
+    nav.classList.toggle("sticky-nav", window.scrollY > 100);
 });
       
 
