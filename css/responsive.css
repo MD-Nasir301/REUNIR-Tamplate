@@ -33,6 +33,16 @@
     .about-us-right {
         background-repeat: no-repeat;
     }
+    .deposit-withdraw-left {
+    padding: 120px 45px;
+    background: none; 
+    }
+    .dep-withdraw-right {
+        padding-right: 20px;
+    }
+    section#transaction {
+        padding: 50px 0;
+    }
     .invest-smartly {
         background-size: 106%;
         background-position: 100% 55%;
@@ -167,14 +177,415 @@
 }
 
 
+/* Large Mobile :576px. (sm) */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+.container {width:450px}
+    .banner-content h2 {
+        font-size: 45px;
+    }
+    .ityped-cursor::after {
+        height: 42px;
+    }
+    .btn2 {
+        font-size: 15px;
+        padding: 10px 18px;
+    }
+    .single-users-box::after {
+        display: none;
+    }
+    .investment-icon {
+        margin-right: 12px;
+    }
+    section#about-us {
+        padding: 50px 0 0px;
+    }
+    .about-us-left {
+        padding-left: 15px;
+    }
+    .investment-icon {
+        margin-right: 12px;
+    }
+    .sec-heading h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .sec-heading h2 {
+        font-size: 35px;
+    }
+    .about-us-right {
+        min-height: 290px;
+        background: url(../img/about-bg.jpg) -181px -40px;
+    }
+    .video-play-btn {
+        top: 15%;
+    }
+    section#choose-us {
+        padding: 50px 0;
+    }
+    .owl-nav {
+        min-width: 300px;
+    }
+    section#invest-smartly {
+        padding: 50px 0;
+    }
+    .signUp-card {
+        margin-top: 15px;
+    }
+    .withdraw-card {
+        margin-top: 30px;
+    }
+    .invest-smartly {
+        background: #efffac1f;
+    }
+    section#advantage {
+        padding: 50px 0 30px;
+    }
+    #advantage {
+        background: url(../img/advantage-bg.jpg) top center;
+        background-size: cover;
+    }
+    .advantage-card {
+        margin-bottom: 25px;
+    }
+    section#investment-plan {
+        padding: 50px 0;
+    }
+    .owl-dots {
+        display: none;
+    }
+    .investment-card-img-box {
+        width: 105%;
+        height: 222px;
+        margin-left: -8px;
+        margin-top: -89px;
+    }
+    section#investment-plan .owl-carousel.owl-drag .owl-item {
+        padding: 0px 80px;
+    }
+    .investment-plan-single-card {
+        margin: 0 55px;
+    }
+    section#affiliate {
+        padding: 50px 0;
+    }
+    .membership-content-area {
+        margin-top: -40px;
+        margin-bottom: 0px;
+    }
+    .membership-content {
+        padding: 30px 30px 30px 30px;
+    }
+    .membership-content h3 {
+        font-size: 22px;
+    }
+    .membership-content h2 {
+        font-size: 38px;
+    }
+    .membership-card {
+        margin-bottom: 15px;
+    }
+    .dep-withdraw-right {
+        padding: 20px;
+    }
+    .withdraw-time-card {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    section#transaction {
+        padding-top: 50px;
+        padding-bottom: 0px;
+    }
+    .transaction-nav {
+        border: 0px solid #f50;
+        padding: 0 0px;
+    }
+    .transaction-nav li {
+        margin: 0 5px;
+    }
+    .transaction-btn {
+        padding: 2px 15px 5px;
+    }
+    .trans-table-area {
+        overflow: scroll;
+    }
+    table.table.trans-table.table-hover {
+        width: 780px;
+    }
+    section#out-app {
+        padding: 50px 0;
+    }
+    .our-app-left {
+        padding-left: 30px;
+    }
+    section#testimonial {
+        padding: 50px 0;
+    }
+    section#question {
+        padding: 50px 0;
+    }
+    .question-nav-btn {
+        display: inline-block;
+        margin: 8px;
+    }
+    section#get-start {
+        padding: 50px 0;
+    }
+    .contact-us-right {
+        padding: 0px 50px;
+    }
+    section#footer-content {
+        padding: 50px 0 0;
+    }
+    button.subscribe-btn {
+        padding: 6px 17px;
+        font-size: 15px;
+    }
+    footer .sec-heading.text-center {
+        padding-bottom: 20px;
+    }
+    .footer-top.pb-120 {
+        padding-bottom: 40px;
+    }
+
+}
+
+
 /* small mobile :320px.(xs) */
-@media (max-width: 767px) {
+@media (max-width: 575px) {
+
+    /* ------------------- */
+    .header-top-left {
+        text-align: center;
+        margin-bottom: 8px;
+    }
+    .header-top-right {
+        justify-content: center !important;
+    }
+    .banner-content h2 {
+        font-size: 35px;
+    }
+    .ityped-cursor::after {
+        height: 31px;
+    }
+    .btn2 {
+        font-size: 15px;
+        padding: 7px 15px;
+    }
+    header {
+        background-size: cover;
+    }
+    .banner-area {
+        margin-bottom: -60px;
+    }
+    .single-users-box::after {
+        display: none;
+    }
+    .investment-input-field {
+        border: none;
+        background: none;
+    }
+    .investment-input-field input {
+        border: 1px solid gray;
+        margin-bottom: 10px;
+        padding: 5px;
+        width: 100%;
+    }
+    .investment-input-area p {
+        margin-left: 22px !important;
+    }
+    section#about-us {
+        padding: 30px 0;
+    }
+    .about-us-left {
+        padding-left: 10px;
+    }
+    .sec-heading h2 {
+        font-size: 35px;
+    }
+    .sec-heading h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+    .about-us p {
+        font-size: 20px;
+    }
+    .about-us-right {
+        background-position: top;
+    }
+    .video-play-btn {
+        top: 40%;
+        left: 50%;
+    }
+    section#choose-us {
+        padding: 30px 0;
+    }
+    .owl-theme .owl-dots .owl-dot {
+        display: none;
+    }
+    section#invest-smartly {
+        padding: 30px 0;
+    }
+    .signUp-card {
+        margin-top: 40px;
+    }
+    .deposit-card {
+        margin-top: 35px;
+    }
+    .withdraw-card {
+        margin-top: 35px;
+    }
+    section#advantage {
+        padding: 30px 0;
+        background-size: cover;
+    }
+    .advantage-card.text-center {
+        margin: 15px 0;
+    }
+    section#investment-plan {
+        padding: 30px 0;
+    }
+    .investment-card-img-box {
+        width: 102%;
+    }
+    .item.investment-plan-single-card {
+        margin: 0 5px;
+        box-shadow: -1px -2px 20px 0px #80808070;
+    }
+    section#affiliate {
+        padding: 30px 0;
+    }
+    .membership-content {
+        padding: 20px 10px;
+        margin: 85px 10px 0;
+        box-shadow: -5px -1px 9px 0px #8080806b;
+    }
+    .membership-content h2 {
+        font-size: 30px;
+    }
+    .membership-content h4 {
+        font-size: 16px;
+    }
+    .membership-card {
+        margin: 5px 0;
+    }
+    section#deposit-withdraw {
+        padding: 30px 0;
+    }
+    .deposit-withdraw-left {
+        background: none;
+        padding: 10px 10px;
+    }
+    .dep-withdraw-icon-area::after {
+        display: none;
+    }
+    .dep-withdraw-icon-area {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .membership-card {
+        margin: 5px 0;
+    }
+    .dep-withdraw-right {
+        padding: 15px 5px;
+    }
+    .withdraw-time-card.clearfix {
+        padding: 10px 15px;
+        margin: 10px 00;
+    }
+    section#transaction {
+        padding: 15px 0;
+    }
+    .transaction-nav-area {
+        margin-top: -30px;
+    }
+    .transaction-nav {
+        border: none;
+    }
+    .transaction-btn {
+        margin: 5px 0;
+    }
+    .trans-table-area {
+        overflow: scroll;
+    }
+    .trans-table {
+        background: #fff;
+        box-shadow: 0px 4px 16px 0px #8080807a;
+        width: 770px;
+    }
+    section#out-app {
+        padding: 30px 0;
+    }
+    .our-app-left {
+        padding-left: 20px;
+    }
+    .our-app-left ul li i {
+        padding: 12px;
+        line-height: 52px;
+    }
+    .app-btn-area {
+        flex-wrap: wrap;
+        margin-top: 15px;
+    }
+    a.app-store-btn {
+        margin: 15px 0 0;
+    }
+    section#testimonial {
+        padding: 30px 0;
+    }
+    section#question {
+        padding: 30px 0;
+    }
+    .question-nav-area li.nav-item {
+        margin: 18px 15px;
+    }
+    section#get-start {
+        padding: 30px 10px;
+    }
+    .get-start-left .sec-heading h4 {
+        font-size: 20px;
+    }
+    section#contact-us {
+        padding: 30px 0;
+    }
+    section#footer-content {
+        padding: 30px 0;
+    }
+    .footer-top.pb-120 {
+        padding: 0 0 20px;
+    }
+    section#get-start {
+        padding: 30px 10px;
+    }
+    .get-start-left .sec-heading h4 {
+        font-size: 20px;
+    }
+    section#contact-us {
+        padding: 30px 0;
+    }
+    section#footer-content {
+        padding: 30px 0;
+    }
+    section#footer-content .sec-heading {
+        padding-bottom: 0px;
+    }
+    .footer-top {
+        padding: 0 0 20px;
+    }
+    .subscribe-form {
+        border: none;
+    }
+    .subscribe-form input {
+        border: 1px solid gray;
+        width: 100%;
+        padding: 5px;
+    }
+    .subscribe-form button {
+        margin: 20px auto 0;
+        display: inherit;
+    }
+    
 
  
 }
  
-/* Large Mobile :480px. (sm) */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-.container {width:450px}
- 
-}

@@ -97,7 +97,10 @@ $(".owl-carousel-choose").owlCarousel({
         0:{
             items:1,
         },
-        600:{
+        576:{
+            items:2,
+        },
+        768:{
             items:3,
         },
         992:{
@@ -122,7 +125,10 @@ $(".owl-carousel-investment-plan").owlCarousel({
         0:{
             items:1,
         },
-        600:{
+        576:{
+            items:1,
+        },
+        768:{
             items:3,
         },
         1000:{
