@@ -135,6 +135,23 @@
     .membership-content {
         padding: 35px 33px 35px 30px;
     }
+    section#deposit-withdraw {
+        padding: 50px 0 0;
+    }
+    .deposit-withdraw-left {
+        padding: 106px 34px;
+        background: none;
+    }
+    .dep-withdraw-right {
+        padding: 70px 0;
+    }
+    .withdraw-time-card.clearfix {
+        padding: 15px 20px;
+        margin: 10px 0;
+    }
+    section#transaction {
+        padding: 50px 0;
+    }
     .trans-table tr td {
         line-height: 28px;
         font-size: 14px;
@@ -473,7 +490,7 @@
     }
     .deposit-withdraw-left {
         background: none;
-        padding: 10px 10px;
+        padding: 5px 34px;
     }
     .dep-withdraw-icon-area::after {
         display: none;

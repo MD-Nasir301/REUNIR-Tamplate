@@ -1,5 +1,5 @@
 /*
-  Theme Name: Name - Multipurpose HTML Template
+  Theme Name: Name - RUNNER
   Author: nasir21b@gmail.com
   Support: admin@gmail.com / nasir21b@gmail.com
   Description: Creative  HTML5 template.
@@ -10,15 +10,27 @@
 /* CSS Index
 -----------------------------------
 1. Theme default css
-2. header
+2. header-top
 3. nav
-4. banner
-5. features-box
-6. department
-7. team
-8. video-area
-9. counter
-10. footer
+4. banner 
+5. our-users 
+6. investment amount
+7. about-us 
+8. choose us 
+9. invest smarly
+10. advantage
+11. investment-plan 
+12. affiliate
+13. membership
+14. deposit-withdraw
+15. transaction
+16. our-app 
+17. testimonial
+18. question
+19. contact-us
+20.	get start 
+21. footer
+
 */
 /* 1. Theme default css */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -162,24 +174,6 @@ a,
 	border-top: 1px solid red;
 }
 
-/* scrollUp Style ------------------------------- */
-/* #scrollUp {
-	background: #7DBA2F;
-	height: 35px;
-	width: 35px;
-	right: 50px;
-	bottom: 77px;
-	color: #fff;
-	font-size: 20px;
-	text-align: center;
-	border-radius: 50%;
-	font-size: 20px;
-	line-height: 34px;
-} 
- #scrollUp:hover {
-	background: #444;
-} */
-
 /* Selection Style ---------------------------- */
 *::-moz-selection {
 	background: #d6b161;
@@ -214,22 +208,6 @@ input::-webkit-inner-spin-button {
 input[type=number] {
 	-moz-appearance: textfield;
 }
-
-/* .owl-carousel Style ------------------------ */
-
-   
-
-/* hr Style ---------------------------- */
-/* hr {
-	border-bottom: 1px solid #eceff8;
-	border-top: 0 none;
-	margin: 30px 0;
-	padding: 0;
-} */
-/* separator Style --------------------- */
-/* .separator {
-	border-top: 1px solid #f2f2f2
-} */
 
 /* ------------ */
 
@@ -272,17 +250,32 @@ header {
 	height: 82px;
 	width: 100%;
 }
-nav {
+.main-menu-content.nav-bg {
+    position: relative;
+    z-index: 5555;
+}
+nav.navbar.navbar-expand-lg {
 	padding: 13px 0;
 }
-.sticky-nav {
-    padding: 7px 0;
+.nav-item {
+	margin: 5px 0;
+}
+.main-menu-content.sticky-nav {
     position: fixed;
     top: 0;
     left: 0;
     background: #231846;
 	width: 100%;
 	z-index: 99999;
+}
+.sticky-nav nav.navbar.navbar-expand-lg {
+	padding: 7px 0;
+}
+button.navbar-toggler {
+    background: #fff;
+}
+.nav-bg {
+	background: #291c52;
 }
 .brand-logo {
 	margin-top: 2px;
@@ -294,9 +287,6 @@ nav {
 .brand-name {
 	font-family: 'Raleway', sans-serif;
 }
-.main-menu {
-	padding-top: 15px;
-}
 .main-menu ul li {
     float: left;
     margin-left: 42px;
@@ -307,6 +297,9 @@ nav {
 }
 .main-menu ul li a:hover {
 	color: #D55131 ;
+}
+a.btn.join-us-btn {
+    margin-top: 10px;
 }
 
 /* banner section*/
@@ -380,6 +373,10 @@ nav {
     margin-top: 10px;
     display: inline-block;
 }
+.daily-profit,.weekly-profit,.monthly-profit {
+	overflow-x: auto
+} 
+
 
 /* about-us  */
 .about-us-left {
@@ -1035,7 +1032,7 @@ button.question-collapse-btn {
 	position: relative;
 	cursor: pointer;
 }
-.question-collapse-btn::after {
+.single-question .question-collapse-btn::after {
     position: absolute;
     background-image: url(../img/down-icon.png);
     content: "";
@@ -1044,7 +1041,7 @@ button.question-collapse-btn {
     height: 45px;
     top: 12px;
 }
-.collapse.show::after {
+.single-question .collapse.show::after {
     position: absolute;
     background: #fff;
     background-image: url(../img/up-icon.png);
