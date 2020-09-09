@@ -21,15 +21,15 @@ $(window).on("resize",function() {
   });
 
 // // ityped -------------------
-// ityped.init(document.querySelector("#ityped"), {
-//     showCursor: true,
-//     strings: ['DEPOSIT', 'BETTING', 'CRYPTOCURRENCY', 'EARN MONEY ',' HIGH YIELD','HYIP','INVESTMENT ',' PROFIT','SPORTING','TOURNAMENT','MUCH MORE...'],
-//     loop: true,
-//     backSpeed: 50,
-//     typeSpeed: 50,
-//     cursorChar: "",
-//     backDelay:  1100,
-//   });
+ityped.init(document.querySelector("#ityped"), {
+    showCursor: true,
+    strings: ['DEPOSIT', 'BETTING', 'CRYPTOCURRENCY', 'EARN MONEY ',' HIGH YIELD','HYIP','INVESTMENT ',' PROFIT','SPORTING','TOURNAMENT','MUCH MORE...'],
+    loop: true,
+    backSpeed: 50,
+    typeSpeed: 50,
+    cursorChar: "",
+    backDelay:  1100,
+  });
 
 
 // // counter ------------------
