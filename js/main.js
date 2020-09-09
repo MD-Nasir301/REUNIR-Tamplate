@@ -33,10 +33,10 @@ ityped.init(document.querySelector("#ityped"), {
 
 
 // counter ------------------
-  $('.counter').counterUp({
-    delay: 10,
-    time: 1500
-});
+//   $('.counter').counterUp({
+//     delay: 10,
+//     time: 1500
+// });
 
 // // owlCarousel------------------------
 // $(".owl-carousel-choose").owlCarousel({
