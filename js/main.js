@@ -32,83 +32,83 @@ $( document ).ready(function() {
 //   });
 
 
-// // counter ------------------
-//   $('.counter').counterUp({
-//     delay: 10,
-//     time: 1500
-// });
+// counter ------------------
+  $('.counter').counterUp({
+    delay: 10,
+    time: 1500
+});
 
-// // owlCarousel------------------------
-// $(".owl-carousel-choose").owlCarousel({
-//     margin:30,
-//     autoplay:true,
-//     autoplayTimeout:2000,
-//     nav:true,
-//     dots:true,
-//     navText:['<i class="icofont-thin-left"></i>','<i class="icofont-thin-right"></i>'],
-//     responsive:{
-//         0:{
-//             items:1,
-//         },
-//         576:{
-//             items:2,
-//         },
-//         768:{
-//             items:3,
-//         },
-//         992:{
-//             items:4,
-//         },
-//         1200:{
-//             items:5,
-//         }
+// owlCarousel------------------------
+$(".owl-carousel-choose").owlCarousel({
+    margin:30,
+    autoplay:true,
+    autoplayTimeout:2000,
+    nav:true,
+    dots:true,
+    navText:['<i class="icofont-thin-left"></i>','<i class="icofont-thin-right"></i>'],
+    responsive:{
+        0:{
+            items:1,
+        },
+        576:{
+            items:2,
+        },
+        768:{
+            items:3,
+        },
+        992:{
+            items:4,
+        },
+        1200:{
+            items:5,
+        }
 
-//     }
+    }
    
-// });
+});
 
-// $(".owl-carousel-investment-plan").owlCarousel({
-//     margin:30,
-//     autoplay:true,
-//     autoplayTimeout:200000000,
-//     nav:true,
-//     dots:true,
-//     navText:['<i class="icofont-thin-left"></i>','<i class="icofont-thin-right"></i>'],
-//     responsive:{
-//         0:{
-//             items:1,
-//         },
-//         576:{
-//             items:1,
-//         },
-//         768:{
-//             items:3,
-//         },
-//         1000:{
-//             items:4,
-//         }
+$(".owl-carousel-investment-plan").owlCarousel({
+    margin:30,
+    autoplay:true,
+    autoplayTimeout:200000000,
+    nav:true,
+    dots:true,
+    navText:['<i class="icofont-thin-left"></i>','<i class="icofont-thin-right"></i>'],
+    responsive:{
+        0:{
+            items:1,
+        },
+        576:{
+            items:1,
+        },
+        768:{
+            items:3,
+        },
+        1000:{
+            items:4,
+        }
 
-//     }
+    }
    
-// });
+});
 
-// // slick-slider
-// $('.testimonial-slider').slick({
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     arrows: false,
-//     fade: false,
-//     asNavFor: '.testimonial-thumb'
-//   });
+// slick-slider
+$('.testimonial-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: false,
+    asNavFor: '.testimonial-thumb'
+  });
 
-//   $('.testimonial-thumb').slick({
-//     slidesToShow: 6,
-//     slidesToScroll: 1,
-//     asNavFor: '.testimonial-slider',
-//     dots: false,
-//     centerMode: false,
-//     focusOnSelect: true
-//   });
+  $('.testimonial-thumb').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    asNavFor: '.testimonial-slider',
+    dots: false,
+    centerMode: false,
+    focusOnSelect: true
+  });
 
 // // magnificPopup img view -----------------
 // $(document).ready(function() {
