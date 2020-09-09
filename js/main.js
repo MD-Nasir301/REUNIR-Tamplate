@@ -2,11 +2,11 @@ $( document ).ready(function() {
 
 
 
-// // Sticky nav ------------------
-// window.addEventListener("scroll", function(){
-//     var nav = document.querySelector('.main-menu-content');
-//     nav.classList.toggle("sticky-nav", window.scrollY > 100);
-// });
+// Sticky nav ------------------
+window.addEventListener("scroll", function(){
+    var nav = document.querySelector('.main-menu-content');
+    nav.classList.toggle("sticky-nav", window.scrollY > 100);
+});
 
 // // Nav background set
 // $(window).on("resize",function() {
