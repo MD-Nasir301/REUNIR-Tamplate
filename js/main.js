@@ -1,5 +1,4 @@
-(function ($) {
-"use strict";
+
 
 // Sticky nav ------------------
 window.addEventListener("scroll", function(){
@@ -162,4 +161,4 @@ $('.investment-input-field select').on("input",function  (){
 })
 
 
-})(jQuery);
+
