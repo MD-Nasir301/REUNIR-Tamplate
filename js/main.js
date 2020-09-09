@@ -31,13 +31,6 @@ ityped.init(document.querySelector("#ityped"), {
     backDelay:  1100,
   });
 
-
-// counter ------------------
-//   $('.counter').counterUp({
-//     delay: 10,
-//     time: 1500
-// });
-
 // // owlCarousel------------------------
 $(".owl-carousel-choose").owlCarousel({
     margin:30,
@@ -158,6 +151,12 @@ $('.investment-input-field select').on("input",function  (){
         $('.monthly-profit span').html(monthlyProfit)
     }
 
+});
+
+// counter ------------------
+  $('.counter').counterUp({
+    delay: 10,
+    time: 1500
 });
 
 
