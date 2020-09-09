@@ -9,16 +9,16 @@ window.addEventListener("scroll", function(){
 });
 
 // // Nav background set
-// $(window).on("resize",function() {
-//     if ($(window).width() < 992) {
-//         var nav = document.querySelector('.main-menu-content');
-//         nav.classList.add("nav-bg");
-//     }
-//    else {
-//     var nav = document.querySelector('.main-menu-content');
-//       nav.classList.remove("nav-bg");
-//    }
-//   });
+$(window).on("resize",function() {
+    if ($(window).width() < 992) {
+        var nav = document.querySelector('.main-menu-content');
+        nav.classList.add("nav-bg");
+    }
+   else {
+    var nav = document.querySelector('.main-menu-content');
+      nav.classList.remove("nav-bg");
+   }
+  });
 
 // // ityped -------------------
 // ityped.init(document.querySelector("#ityped"), {
