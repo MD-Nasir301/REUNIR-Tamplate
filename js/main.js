@@ -154,10 +154,10 @@ $('.investment-input-field select').on("input",function  (){
 });
 
 // counter ------------------
-//   $('.counter').counterUp({
-//     delay: 10,
-//     time: 1500
-// });
+  $('.counter').counterUp({
+    delay: 10,
+    time: 1500
+});
 
 
 
