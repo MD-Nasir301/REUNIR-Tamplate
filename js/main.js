@@ -125,41 +125,41 @@ $(document).ready(function() {
 
 // calculate Profit
 
-$('.investment-input-field input').on("input",function(e){
-   var investAmount =parseInt($(this).val());
-   var investPer = parseInt($('.investment-input-field select').val());
-   var dailyProfit=((investAmount*investPer/100)*1).toFixed(2)
-   var weeklyProfit= ((investAmount*investPer/100)*7).toFixed(2)   
-   var monthlyProfit=((investAmount*investPer/100)*30).toFixed(2)
-   $('.daily-profit span').html(dailyProfit)
-   $('.weekly-profit span').html(weeklyProfit)
-   $('.monthly-profit span').html(monthlyProfit)
+// $('.investment-input-field input').on("input",function(e){
+//    var investAmount =parseInt($(this).val());
+//    var investPer = parseInt($('.investment-input-field select').val());
+//    var dailyProfit=((investAmount*investPer/100)*1).toFixed(2)
+//    var weeklyProfit= ((investAmount*investPer/100)*7).toFixed(2)   
+//    var monthlyProfit=((investAmount*investPer/100)*30).toFixed(2)
+//    $('.daily-profit span').html(dailyProfit)
+//    $('.weekly-profit span').html(weeklyProfit)
+//    $('.monthly-profit span').html(monthlyProfit)
 
-   if(e.target.value == ''){
-        $('.daily-profit span').html(0)
-        $('.weekly-profit span').html(0)
-        $('.monthly-profit span').html(0)
-   }
- }) 
+//    if(e.target.value == ''){
+//         $('.daily-profit span').html(0)
+//         $('.weekly-profit span').html(0)
+//         $('.monthly-profit span').html(0)
+//    }
+//  }) 
 
-$('.investment-input-field select').on("input",function  (){
-    if($('.investment-input-field input').val() == ''){
-        $('.daily-profit span').html(0)
-        $('.weekly-profit span').html(0)
-        $('.monthly-profit span').html(0)
-    }
-    else{
-        var investAmount =parseInt($('.investment-input-field input').val());
-        var investPer = parseInt($(this).val());
-        var dailyProfit=((investAmount*investPer/100)*1).toFixed(2)
-        var weeklyProfit= ((investAmount*investPer/100)*7).toFixed(2)   
-        var monthlyProfit=((investAmount*investPer/100)*30).toFixed(2)
-        $('.daily-profit span').html(dailyProfit)
-        $('.weekly-profit span').html(weeklyProfit)
-        $('.monthly-profit span').html(monthlyProfit)
-    }
+// $('.investment-input-field select').on("input",function  (){
+//     if($('.investment-input-field input').val() == ''){
+//         $('.daily-profit span').html(0)
+//         $('.weekly-profit span').html(0)
+//         $('.monthly-profit span').html(0)
+//     }
+//     else{
+//         var investAmount =parseInt($('.investment-input-field input').val());
+//         var investPer = parseInt($(this).val());
+//         var dailyProfit=((investAmount*investPer/100)*1).toFixed(2)
+//         var weeklyProfit= ((investAmount*investPer/100)*7).toFixed(2)   
+//         var monthlyProfit=((investAmount*investPer/100)*30).toFixed(2)
+//         $('.daily-profit span').html(dailyProfit)
+//         $('.weekly-profit span').html(weeklyProfit)
+//         $('.monthly-profit span').html(monthlyProfit)
+//     }
 
-})
+// });
 
 
 
