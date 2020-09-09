@@ -1,34 +1,34 @@
 (function ($) {
 "use strict";
 
-// Sticky nav ------------------
-window.addEventListener("scroll", function(){
-    var nav = document.querySelector('.main-menu-content');
-    nav.classList.toggle("sticky-nav", window.scrollY > 100);
-});
+// // Sticky nav ------------------
+// window.addEventListener("scroll", function(){
+//     var nav = document.querySelector('.main-menu-content');
+//     nav.classList.toggle("sticky-nav", window.scrollY > 100);
+// });
 
-// Nav background set
-$(window).on("resize",function() {
-    if ($(window).width() < 992) {
-        var nav = document.querySelector('.main-menu-content');
-        nav.classList.add("nav-bg");
-    }
-   else {
-    var nav = document.querySelector('.main-menu-content');
-      nav.classList.remove("nav-bg");
-   }
-  });
+// // Nav background set
+// $(window).on("resize",function() {
+//     if ($(window).width() < 992) {
+//         var nav = document.querySelector('.main-menu-content');
+//         nav.classList.add("nav-bg");
+//     }
+//    else {
+//     var nav = document.querySelector('.main-menu-content');
+//       nav.classList.remove("nav-bg");
+//    }
+//   });
 
-// ityped -------------------
-ityped.init(document.querySelector("#ityped"), {
-    showCursor: true,
-    strings: ['DEPOSIT', 'BETTING', 'CRYPTOCURRENCY', 'EARN MONEY ',' HIGH YIELD','HYIP','INVESTMENT ',' PROFIT','SPORTING','TOURNAMENT','MUCH MORE...'],
-    loop: true,
-    backSpeed: 50,
-    typeSpeed: 50,
-    cursorChar: "",
-    backDelay:  1100,
-  });
+// // ityped -------------------
+// ityped.init(document.querySelector("#ityped"), {
+//     showCursor: true,
+//     strings: ['DEPOSIT', 'BETTING', 'CRYPTOCURRENCY', 'EARN MONEY ',' HIGH YIELD','HYIP','INVESTMENT ',' PROFIT','SPORTING','TOURNAMENT','MUCH MORE...'],
+//     loop: true,
+//     backSpeed: 50,
+//     typeSpeed: 50,
+//     cursorChar: "",
+//     backDelay:  1100,
+//   });
 
 
 // counter ------------------
